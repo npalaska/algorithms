@@ -4,10 +4,13 @@ import java.util.Stack;
 
 public class DFS {
 
+    Stack<Vertex> stack;
+
+    public DFS () {
+        this.stack = new Stack<>();
+    }
 
     public void dfs (Vertex vertex) {
-
-        Stack<Vertex> stack = new Stack<>();
 
         stack.add(vertex);
         vertex.setVisited(true);
