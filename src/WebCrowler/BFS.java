@@ -48,7 +48,7 @@ public class BFS {
         }
     }
 
-    public StringBuilder readURL(String s) {
+    private StringBuilder readURL(String s) {
         StringBuilder newString = new StringBuilder("");
         try {
             URL url = new URL(s);
